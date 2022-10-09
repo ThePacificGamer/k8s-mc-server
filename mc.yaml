@@ -28,7 +28,7 @@ spec:
       volumes:
         - name: minecraft-data
           hostPath:
-            path: /home/alex/mcserve
+            path: /home/<youruser>/mcserve
 ---
 apiVersion: v1
 kind: Service
