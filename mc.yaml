@@ -17,7 +17,7 @@ spec:
         - name: minecraftservertest
           image: alpine:latest
           command: ["/bin/sh"]
-          args: ["-c", "apk add openjdk17 && cd minecraftsrv && ./sessioncheck.sh"]
+          args: ["-c", "apk add openjdk21-jre-headless && cd minecraftsrv && ./sessioncheck.sh"]
           ports:
           - containerPort: 25565
             name: minecraft
